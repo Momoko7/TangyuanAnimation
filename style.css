@@ -1,0 +1,214 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.wrapper{
+    padding: 100px 100px;
+}
+.shadog{
+    /*方便后代元素定位*/
+    position: relative;
+/*    width: 500px;
+    height: 500px;
+    border: solid black 10px;*/
+}
+.head{
+    width: 280px;
+    height: 230px;
+    border: solid #000000 5px;
+    border-bottom: #ffffff;
+    border-radius: 160px 180px 120px 120px;
+}
+/*眼睛公共样式*/
+.eye{
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    background-color: #0b1014;
+    position: absolute;
+    animation:myeyes 3s infinite;
+    -moz-animation:myeyes 3s infinite; /* Firefox */
+    -webkit-animation:myeyes 3s infinite; /* Safari and Chrome */
+    -o-animation:myeyes 3s infinite; /* Opera */
+}
+/*眼睛动画*/
+@keyframes myeyes
+{
+    0%   {
+        width: 20px;
+        height: 20px;
+        border-radius: 20px;
+    }
+    25%  {
+        width: 20px;
+        height: 5px;
+    }
+    50%  {
+        width: 20px;
+        height: 5px;
+    }
+    100% {
+        width: 20px;
+        height: 20px;
+        border-radius: 20px;
+    }
+}
+@-moz-keyframes myeyes /* Firefox */
+{
+    0%   {
+        width: 20px;
+        height: 20px;
+        border-radius: 20px;
+    }
+    25%  {
+        width: 20px;
+        height: 5px;
+    }
+    50%  {
+        width: 20px;
+        height: 5px;
+    }
+    100% {
+        width: 20px;
+        height: 20px;
+        border-radius: 20px;
+    }
+}
+@-webkit-keyframes myeyes /* Safari 和 Chrome */
+{
+    0%   {
+        width: 20px;
+        height: 20px;
+        border-radius: 20px;
+    }
+    25%  {
+        width: 20px;
+        height: 5px;
+    }
+    50%  {
+        width: 20px;
+        height: 5px;
+    }
+    100% {
+        width: 20px;
+        height: 20px;
+        border-radius: 20px;
+    }
+}
+@-o-keyframes myeyes /* Opera */
+{
+    0%   {
+        width: 20px;
+        height: 20px;
+        border-radius: 20px;
+    }
+    25%  {
+        width: 20px;
+        height: 5px;
+    }
+    50%  {
+        width: 20px;
+        height: 5px;
+    }
+    100% {
+        width: 20px;
+        height: 20px;
+        border-radius: 20px;
+    }
+}
+.eye-l{
+    top: 100px;
+    left: 130px;
+}
+.eye-r{
+    top: 100px;
+    left: 220px;
+}
+.eyebrow-l{
+    position: absolute;
+    width: 25px;
+    height: 8px;
+    background-color: #0e161b;
+    border-radius: 10px 30px 10px 20px;
+    transform:rotate(9deg);
+    top: 82px;
+    left: 132px;
+}
+.eyebrow-r{
+    position: absolute;
+    width: 20px;
+    height: 8px;
+    background-color: #0e161b;
+    border-radius: 30px 10px 30px 20px;
+    transform:rotate(-25deg);
+    top: 80px;
+    left: 215px;
+}
+.mouse{
+    width: 26px;
+    height: 40px;
+    border-bottom: solid 5px #000000;
+    border-radius: 50px;
+    position: absolute;
+}
+
+.mouse-l{
+    top: 80px;
+    left: 160px;
+}
+.mouse-r{
+    top: 80px;
+    left: 186px;
+}
+.face{
+    position: absolute;
+    width: 24px;
+    height: 18px;
+    background-color: #FF0000;
+    border-radius: 20px;
+    /*渐变色*/
+    background: -webkit-radial-gradient(red,white); /* Safari 5.1 - 6.0 */
+    background: -o-radial-gradient(red,white); /* Opera 11.6 - 12.0 */
+    background: -moz-radial-gradient(red, white); /* Firefox 3.6 - 15 */
+    background: radial-gradient(red, white); /* 标准法（必须放在最后）*/
+}
+.face-l{
+    top: 120px;
+    left: 100px;
+}
+.face-r{
+    top: 118px;
+    left: 240px;
+}
+
+.cao-gan{
+    position: absolute;
+    width: 10px;
+    height: 20px;
+    background-color: chocolate;
+    transform:rotate(-50deg);
+    border-radius: 10px;
+    border: solid black 5px;
+    top: -3px;
+    left: 40px;
+}
+.cao{
+    position: absolute;
+    width: 60px;
+    height: 20px;
+    background-color: #00A000;
+    border: black 5px solid;
+}
+.cao-l{
+    top: -13px;
+    left: -28px;
+    border-radius: 30px 50px 10px 30px;
+    transform:rotate(-10deg);
+}
+.cao-r{
+    border-radius: 30px 10px 50px 30px;
+    height: 23px;
+    top: -48px;
+    left: 21px;
+    transform:rotate(130deg);
+}
